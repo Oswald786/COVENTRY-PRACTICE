@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="jscript.js" defer></Script>
+        <title>ABOUT US</title>
+    </head>
+    <body style="padding: 0%; margin: 0px; background-color: #0077b6;
+    color: #ffffff;">
+    <section>
+        <div id="Header">
+        <!-----HERE IS THE SECTION PAGE WHERE I NEED A HEADER INCLUDING THE LOGO CONTACT DETAILS AND COMPANY NAME WRITTEN-->
+            <img src="ASSETS/logo.jpg" alt="LOGO OF SCUBA DIVING COMPANY" id="logo">
+
+            <h1 id="webpageTitle">Ocean Explorers</h1>
+
+            <div id="navigationTabs">
+            <div><a href="HOME PAGE.html">HOME</a></div>
+            <div><a href="ABOUT US.html">ABOUT US</a></div>
+            <div><a href="TRIPS.html">TRIPS</a></div>
+            <div><a href="SUPPLIES.html">SHOP</a></div>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <p id="contactDetails">
+        07700 9925 6695 <br    />
+        oceanexplorers@gmail.com <br   /> 
+    </p>
+    <hr>
+    <h1>Need more information submit your details and get in touch here</h1> 
+    <div class="text">
+        <form>
+            <fieldset id="BasicInformation">
+
+                <label for="firstName">First name: </label>
+                <input type="text" name="firstName" maxlength="10" required id="firstName">
+
+                <label for="lastName">last name: </label>
+                <input type="text" name="lastName" id="lastName" required>
+
+                <label for="emailAddress">Email address: </label>
+                <input type="email" name="emailAddress" id="emailAddress" required>
+            </fieldset>
+            <fieldset>
+                <h2>what kind of information do you need</h2>
+                  <label for="TripQuery"> I have a trip Query</label>
+                  <input type="radio" name="queryType" value="TripQuery">
+
+                  <label for="coaching">I have a coaching Query</label>
+                  <input type="radio" name="queryType" value="coaching">
+
+                  <label for="prices"> I have a prices Query</label>
+                  <input type="radio" name="queryType" value="prices">
+
+                  <label for="bulkOrders">I have a bulk ordering Query</label>
+                  <input type="radio" name="queryType" value="bulkOrders">
+
+                  <label for="other">I have a query not related to these options.</label>
+                  <input type="radio" name="queryType" value="other">
+            
+                <h2>Send your question here</h2>
+                <input type="text" maxlength="100" style="width: 550px; height: 400px;" id="comments">
+                <input type="submit" id="submit" onclick="submitForm()">
+           </fieldset>
+        
+        </form>
+    </div> 
+    </body>
+</html>
